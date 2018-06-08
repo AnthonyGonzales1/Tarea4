@@ -1,3 +1,5 @@
+/*Problema #2*/
+
  if object_id('agenda') is not null
   drop table agenda;
 
@@ -23,6 +25,8 @@
 
  drop table agenda;
 
+ /*Problema #3*/
+
  if object_id('peliculas')is not null
   drop table peliculas;
 
@@ -45,6 +49,8 @@
   values ('Elsa y Fred','China Zorrilla',110,2);
 
  select *from peliculas;
+
+ /*Problema #4*/
 
   if object_id('peliculas') is not null
   drop table peliculas;
@@ -72,6 +78,8 @@
  select titulo,duracion from peliculas;
 
  select titulo,cantidad from peliculas;
+
+ /*Problema #5*/
 
  if object_id('agenda') is not null
   drop table agenda;
@@ -108,6 +116,8 @@
 
  select nombre from agenda
   where telefono='4545454';
+
+  /*Problema #6*/
 
   if object_id('articulos') is not null
   drop table articulos;
@@ -147,6 +157,8 @@
   from articulos
   where precio<>100;
 
+  /*Problema #7*/
+
   if object_id('agenda') is not null
   drop table agenda;
 
@@ -179,6 +191,8 @@
  delete from agenda;
 
  select * from agenda;
+
+ /*Problema #8*/
 
  if object_id('agenda') is not null
   drop table agenda;
@@ -217,6 +231,8 @@
   where nombre='Juan';
 
  select * from agenda;
+
+ /*Problema #9*/
 
  if object_id('medicamentos') is not null
    drop table medicamentos;
@@ -275,6 +291,8 @@
  select *from medicamentos
   where precio is not null;
 
+   /*Problema #11*/
+
   if object_id('libros') is not null
   drop table libros;
 
@@ -301,6 +319,8 @@
 
  update libros set codigo=1
   where titulo='Martin Fierro';
+
+   /*Problema #12*/
 
   if object_id('medicamentos') is not null
   drop table medicamentos;
@@ -338,6 +358,8 @@
 
  select *from medicamentos;
 
+ /*Problema #13*/
+
  if object_id('medicamentos') is not null
   drop table medicamentos;
 
@@ -372,6 +394,8 @@
  select ident_seed('medicamentos');
 
  select ident_incr('medicamentos');
+
+ /*Problema #14*/
 
  if object_id('alumnos') is not null
   drop table alumnos;
@@ -416,6 +440,8 @@
   values('25666777','Torres Ramiro','Dinamarca 209');
  select *from alumnos;
 
+ /*Problema #15*/
+
  if object_id('autos') is not null
   drop table autos;
 
@@ -442,6 +468,8 @@
 
  select *from autos
   where modelo='1990';
+
+   /*Problema #17*/
 
   if object_id('cuentas') is not null
   drop table cuentas;
@@ -475,6 +503,8 @@
  select *from cuentas
   where numero>=3000;
 
+   /*Problema #18*/
+
   if object_id('alumnos') is not null
   drop table alumnos;
 
@@ -507,6 +537,8 @@
 
  insert into alumnos values('Lopez','Carlos','27777777','Sarmiento 1254','03-15-1990',null);
 
+  /*Problema #19*/
+
  if object_id('cuentas') is not null
   drop table cuentas;
 
@@ -537,6 +569,8 @@
 
  select *from libros;
 
+  /*Problema #20*/
+
  if object_id('visitantes') is not null
   drop table visitantes;
 
@@ -566,6 +600,7 @@
 
  select *from visitantes;
 
+  /*Problema #21*/
 
 if object_id ('articulos') is not null
   drop table articulos;
@@ -600,6 +635,8 @@ if object_id ('articulos') is not null
 
  select *from articulos;
 
+  /*Problema #22*/
+
   if object_id ('libros') is not null
   drop table libros;
 
@@ -633,6 +670,8 @@ if object_id ('articulos') is not null
  select titulo+'-'+autor as "Título y autor"
   from libros;
 
+   /*Problema #23*/
+
    if object_id('agenda') is not null
   drop table agenda;
 
@@ -665,6 +704,8 @@ if object_id ('articulos') is not null
 
  drop table agenda;
 
+  /*Problema #27*/
+
   if object_id ('empleados') is not null
   drop table empleados;
 
@@ -694,7 +735,9 @@ if object_id ('articulos') is not null
   where datename(month,fechanacimiento)='october';
 
  select nombre,apellido from empleados
-  where datepart(year,fechaingreso)=2000; 
+  where datepart(year,fechaingreso)=2000;
+  
+   /*Problema #28*/
 
   if object_id('visitas') is not null
   drop table visitas;
@@ -741,6 +784,8 @@ if object_id ('articulos') is not null
   from visitas
   where datename(month,fecha)='October'
   order by 2;
+
+   /*Problema #30*/
 
   if object_id('medicamentos') is not null
   drop table medicamentos;
@@ -796,6 +841,8 @@ if object_id ('articulos') is not null
   where laboratorio='Bayer' or
   precio<3;
 
+   /*Problema #31*/
+
   if object_id('peliculas') is not null
   drop table peliculas;
 
@@ -834,6 +881,8 @@ if object_id ('articulos') is not null
 
  select * from peliculas;
 
+  /*Problema #32*/
+
  if object_id('visitas') is not null
   drop table visitas;
 
@@ -869,6 +918,8 @@ if object_id ('articulos') is not null
  select *from visitas
   where numero between 2 and 5;
 
+   /*Problema #33*/
+
   if object_id('medicamentos') is not null
   drop table medicamentos;
 
@@ -903,6 +954,8 @@ if object_id ('articulos') is not null
 
  select *from medicamentos
   where cantidad in (1,2,3,4,5);
+
+   /*Problema #34*/
 
   if object_id('empleados') is not null
   drop table empleados;
@@ -960,6 +1013,8 @@ if object_id ('articulos') is not null
  select *from empleados
   where fechaingreso like '%1990%';
 
+   /*Problema #35*/
+
   if object_id('medicamentos') is not null
   drop table medicamentos;
 
@@ -1003,6 +1058,8 @@ if object_id ('articulos') is not null
 
  select count(numerolote) from medicamentos;
 
+  /*Problema #36*/
+
   if object_id('medicamentos') is not null
   drop table medicamentos;
 
@@ -1039,6 +1096,8 @@ if object_id ('articulos') is not null
  select count_big(precio) as 'Con precio',
   count_big(cantidad) as 'Con cantidad'
   from medicamentos;
+
+   /*Problema #38*/
 
   if object_id('empleados') is not null
   drop table empleados;
@@ -1097,6 +1156,8 @@ if object_id ('articulos') is not null
  select avg(cantidadhijos)
   from empleados
   where seccion='Sistemas';
+
+   /*Problema #39*/
 
   if object_id('visitantes') is not null
   drop table visitantes;
@@ -1164,7 +1225,9 @@ if object_id ('articulos') is not null
   from visitantes
   where mail is not null and
   mail<>'no tiene'
-  group by all ciudad;
+  group by all ciudad
+
+   /*Problema #40*/
 
   if object_id('clientes') is not null
   drop table clientes;
@@ -1217,6 +1280,8 @@ if object_id ('articulos') is not null
   group by all ciudad
   having count(*)<2 and
   ciudad <> 'Cordoba';
+
+   /*Problema #41*/
 
    if object_id('clientes') is not null
   drop table clientes;
@@ -1271,6 +1336,8 @@ if object_id ('articulos') is not null
   group by pais,estado,ciudad
   with rollup;
 
+   /*Problema #42*/
+
   if object_id('ventas') is not null
   drop table ventas;
 
@@ -1310,6 +1377,8 @@ if object_id ('articulos') is not null
   from ventas
   group by vendedor,tipopago
   with cube;
+
+   /*Problema #43*/
 
    if object_id('empleados') is not null
   drop table empleados;
@@ -1361,6 +1430,8 @@ if object_id ('articulos') is not null
   from empleados
   group by sexo,estadocivil
   with cube;
+
+   /*Problema #44*/
 
   if object_id('inmuebles') is not null
   drop table inmuebles;
@@ -1425,6 +1496,8 @@ if object_id ('articulos') is not null
   compute avg(monto)
   by documento;
 
+   /*Problema #45*/
+
   if object_id('clientes') is not null
   drop table clientes;
 
@@ -1474,6 +1547,7 @@ if object_id ('articulos') is not null
   from clientes
   group by provincia;
 
+   /*Problema #47*/
 
   if object_id('empleados') is not null
   drop table empleados;
@@ -1519,6 +1593,9 @@ if object_id ('articulos') is not null
  select top 4 with ties nombre,estadocivil,seccion
   from empleados
   order by estadocivil,seccion;
+
+   /*Problema #48*/
+
   if object_id('consultas') is not null
   drop table consultas;
 
@@ -1543,6 +1620,8 @@ if object_id ('articulos') is not null
 
  insert into consultas
   values ('2006/11/05 8:00','Perez','23333333','Fuentes Carlos','PAMI');
+
+   /*Problema #49*/
 
   if object_id('visitantes') is not null
   drop table visitantes;
@@ -1586,6 +1665,8 @@ if object_id ('articulos') is not null
   add constraint DF_visitantes_numero
   default 0
   for numero;
+
+   /*Problema #50*/
 
    if object_id('empleados') is not null
   drop table empleados;
@@ -1645,6 +1726,8 @@ if object_id ('articulos') is not null
  add constraint CK_seccion_letrainicial
  check (seccion like '%B');
 
+  /*Problema #51*/
+
   if object_id('empleados') is not null
   drop table empleados;
 
@@ -1699,6 +1782,8 @@ if object_id ('articulos') is not null
   nocheck constraint CK_empleados_seccion_lista;
  update empleados set seccion='Recursos' where nombre='Carlos Caseres';
 
+  /*Problema #53*/
+
   if object_id('empleados') is not null
   drop table empleados;
 
@@ -1747,6 +1832,8 @@ if object_id ('articulos') is not null
 
  sp_helpconstraint empleados;
 
+  /*Problema #54*/
+
  if object_id('remis') is not null
   drop table remis;
 
@@ -1777,6 +1864,8 @@ if object_id ('articulos') is not null
  insert into remis values(null,'Renault 11','1995');
 
  sp_helpconstraint remis;
+
+  /*Problema #55*/
 
  if object_id('vehiculos') is not null
   drop table vehiculos;
@@ -1824,6 +1913,8 @@ if object_id ('articulos') is not null
   drop PK_vehiculos_patentellegada, CK_vehiculos_tipo;
 
  sp_helpconstraint vehiculos;
+
+  /*Problema #57*/
 
   if object_id('vehiculos') is not null
   drop table vehiculos;
@@ -1905,6 +1996,8 @@ if object_id ('articulos') is not null
 
  sp_helpconstraint vehiculos;
 
+  /*Problema #58*/
+
  if object_id('vehiculos') is not null
   drop table vehiculos;
 
@@ -1958,6 +2051,8 @@ if object_id ('articulos') is not null
  drop rule RG_patente_patron;
 
  sp_help;
+
+  /*Problema #62*/
 
  if object_id ('clientes') is not null
   drop table clientes;
@@ -2022,6 +2117,8 @@ if object_id ('articulos') is not null
  exec sp_bindrule RG_legajo,'clientes.legajo';
 
  insert into clientes values (default,'Luis Garcia','Colon 876','Cordoba','Cordoba','2001-10-10');
+
+  /*Problema #63*/
 
  if object_id ('libros') is not null
   drop table libros;
@@ -2091,6 +2188,8 @@ if object_id ('articulos') is not null
 
  sp_help VP_cero;
 
+  /*Problema #64*/
+
  if object_id('alumnos') is not null
   drop table alumnos;
  create table alumnos(
@@ -2152,6 +2251,8 @@ if object_id ('articulos') is not null
 
  select name from sysindexes
   where name like 'I_%';
+
+   /*Problema #66*/
 
   if object_id('alumnos') is not null
   drop table alumnos;
@@ -2219,6 +2320,8 @@ if object_id ('articulos') is not null
 
  sp_helpindex alumnos;
 
+  /*Problema #67*/
+
   if object_id('alumnos') is not null
   drop table alumnos;
  create table alumnos(
@@ -2254,6 +2357,8 @@ if object_id ('articulos') is not null
   drop PK_alumnos_legajo;
 
  sp_helpindex alumnos;
+
+   /*Problema #68*/
 
  if (object_id('clientes')) is not null
    drop table clientes;
@@ -2303,6 +2408,8 @@ if object_id ('articulos') is not null
   join provincias as p
   on c.codigoprovincia=p.codigo
   where p.nombre='Santa Fe';
+
+   /*Problema #69*/
 
   if (object_id('clientes')) is not null
    drop table clientes;
@@ -2365,60 +2472,7 @@ if object_id ('articulos') is not null
   on codigoprovincia = p.codigo
   where p.nombre='Cordoba';
 
-  if (object_id('clientes')) is not null
-   drop table clientes;
-  if (object_id('provincias')) is not null
-   drop table provincias;
-
- create table clientes (
-  codigo int identity,
-  nombre varchar(30),
-  domicilio varchar(30),
-  ciudad varchar(20),
-  codigoprovincia tinyint not null,
-  primary key(codigo)
- );
-
- create table provincias(
-  codigo tinyint identity,
-  nombre varchar(20),
-  primary key (codigo)
- );
-
- insert into provincias (nombre) values('Cordoba');
- insert into provincias (nombre) values('Santa Fe');
- insert into provincias (nombre) values('Corrientes');
-
- insert into clientes values ('Lopez Marcos','Colon 111','Córdoba',1);
- insert into clientes values ('Perez Ana','San Martin 222','Cruz del Eje',1);
- insert into clientes values ('Garcia Juan','Rivadavia 333','Villa Maria',1);
- insert into clientes values ('Perez Luis','Sarmiento 444','Rosario',2);
- insert into clientes values ('Gomez Ines','San Martin 666','Santa Fe',2);
- insert into clientes values ('Torres Fabiola','Alem 777','La Plata',4);
- insert into clientes values ('Garcia Luis','Sucre 475','Santa Rosa',5);
-
- select c.nombre,domicilio,ciudad, p.nombre
-  from provincias as p
-  right join clientes as c
-  on codigoprovincia = p.codigo;
-
- select c.nombre,domicilio,ciudad, p.nombre
-  from clientes as c
-  left join provincias as p
-  on codigoprovincia = p.codigo;
-
- select c.nombre,domicilio,ciudad, p.nombre
-  from provincias as p
-  right join clientes as c
-  on codigoprovincia = p.codigo
-  where p.codigo is not null;
-
- select c.nombre,domicilio,ciudad, p.nombre
-  from provincias as p
-  right join clientes as c
-  on codigoprovincia = p.codigo
-  where p.codigo is null
-  order by ciudad;
+   /*Problema #70*/
 
    if (object_id('deportes')) is not null
   drop table deportes;
@@ -2480,6 +2534,8 @@ if object_id ('articulos') is not null
   from inscriptos as i
   full join deportes as d
   on codigodeporte=codigo;
+
+   /*Problema #71*/
 
    if object_id('mujeres') is not null
   drop table mujeres;
@@ -2555,6 +2611,8 @@ if object_id ('articulos') is not null
   where cm.sexo='f' and cv.sexo='m' and
   cm.edad-cv.edad between -5 and 5;
 
+     /*Problema #72*/
+
    if object_id('visitantes') is not null
   drop table visitantes;
  if object_id('ciudades') is not null
@@ -2629,6 +2687,8 @@ if object_id ('articulos') is not null
   drop table deportes;
  if object_id('inscriptos') is not null
   drop table inscriptos;
+
+     /*Problema #73*/
 
  create table socios(
   documento char(8) not null, 
